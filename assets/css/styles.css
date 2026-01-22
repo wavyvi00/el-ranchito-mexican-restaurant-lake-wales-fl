@@ -18,6 +18,58 @@
     --section-padding: 80px 20px;
 }
 
+/* Page Headers (Menu, etc.) */
+.page-header {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.page-header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.menu-category {
+    padding: 4rem 0;
+}
+
+.menu-category h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.menu-category h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--color-secondary);
+    margin: 10px auto 0;
+}
+
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -119,8 +171,8 @@ ul {
     top: 0;
     width: 100%;
     z-index: 100;
-    padding: 1.5rem 0;
-    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
@@ -132,9 +184,10 @@ ul {
 }
 
 .logo img {
-    height: 100px;
-    /* Increased logo size */
+    height: 85px;
+    /* Adjusted based on user feedback */
     width: auto;
+    transition: height 0.3s ease;
 }
 
 .nav-links {
