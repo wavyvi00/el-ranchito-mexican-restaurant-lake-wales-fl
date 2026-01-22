@@ -414,16 +414,23 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    :root {
+        --section-padding: 60px 20px;
+        /* Reduced section padding */
+    }
+
     .nav-links {
         display: none;
     }
 
     .navbar {
-        padding: 1rem 0;
+        padding: 0.8rem 0;
+        /* Slightly tighter header */
     }
 
     .logo img {
-        height: 70px;
+        height: 60px;
+        /* Smaller logo for mobile */
     }
 
     .mobile-menu-toggle {
@@ -433,6 +440,8 @@ footer {
         color: var(--color-text-main);
         font-size: 1.5rem;
         cursor: pointer;
+        padding: 10px;
+        /* Increase touch target */
     }
 
     .mobile-menu-toggle span {
@@ -441,13 +450,35 @@ footer {
         height: 3px;
         background-color: #333;
         margin-bottom: 5px;
+        transition: all 0.3s ease;
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        /* readable but impactful */
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        /* Scaled down headings */
     }
 
     .reverse-mobile {
         flex-direction: column-reverse;
+    }
+
+    .page-header h1 {
+        font-size: 3rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        /* Full width cards on mobile */
+        gap: 1.5rem;
     }
 }
