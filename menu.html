@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | El Ranchito Mexican Cuisine</title>
+    <meta name="description"
+        content="Explore our full menu at El Ranchito. Authentic Tacos, Enchiladas, Fajitas, and refreshing Margaritas.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 80px;
+            /* Offset fixed header */
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-category {
+            padding: 4rem 0;
+        }
+
+        .menu-category h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--color-primary);
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="El Ranchito Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#about">Our Story</a>
+                <a href="menu.html">Menu</a>
+                <a href="index.html#visitus">Visit Us</a>
+                <a href="index.html#visitus" class="btn-primary">Visit Us</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-header">
+        <h1>Our Menu</h1>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Appetizers -->
+        <section id="appetizers" class="menu-category container">
+            <h2>Appetizers</h2>
+            <div class="menu-grid">
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1541544741938-0af808871cc4?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Fresh Guacamole</h3>
+                        <p>Avocados mashed daily with fresh lime, cilantro, onions, and tomatoes.</p>
+                        <span class="price">$9</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1599974579688-8dbdd3b43d78?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Queso Dip</h3>
+                        <p>Warm, creamy cheese dip served with our house-made corn tortilla chips.</p>
+                        <span class="price">$8</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nachos Supreme</h3>
+                        <p>Chips piled high with cheese, beans, jalapenos, sour cream, and guacamole.</p>
+                        <span class="price">$14</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tacos -->
+        <section id="tacos" class="menu-category container bg-light">
+            <h2>Tacos & Burritos</h2>
+            <div class="menu-grid">
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1568106690101-fd68aaa5022a?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tacos Al Pastor</h3>
+                        <p>Marinated pork, pineapple, cilantro, and onions.</p>
+                        <span class="price">$12</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Street Tacos</h3>
+                        <p>Three soft corn tortillas with your choice of meat, onions, and cilantro.</p>
+                        <span class="price">$11</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1574672174719-7f556d3967d3?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Burrito California</h3>
+                        <p>Massive burrito filled with steak, fries, cheese, guacamole, and salsa.</p>
+                        <span class="price">$14</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites -->
+        <section id="favorites" class="menu-category container">
+            <h2>House Favorites</h2>
+            <div class="menu-grid">
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Carne Asada</h3>
+                        <p>Grilled skirt steak served with rice, beans, and fresh tortillas.</p>
+                        <span class="price">$18</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1599321955726-e04842d99462?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Enchiladas Verdes</h3>
+                        <p>Chicken enchiladas topped with tangy tomatillo sauce and crema.</p>
+                        <span class="price">$15</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1519690889869-e705e59f72e1?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sizzling Fajitas</h3>
+                        <p>Your choice of steak, chicken, or shrimp with bell peppers and onions.</p>
+                        <span class="price">$19</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks -->
+        <section id="drinks" class="menu-category container">
+            <h2>Drinks</h2>
+            <div class="menu-grid">
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Classic Margarita</h3>
+                        <p>Tequila, lime juice, and triple sec on the rocks or frozen.</p>
+                        <span class="price">$10</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1625938145244-807255850904?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Horchata</h3>
+                        <p>Traditional sweet rice milk beverage with cinnamon.</p>
+                        <span class="price">$4</span>
+                    </div>
+                </div>
+                <div class="menu-card scroll-reveal">
+                    <div class="card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1473180621404-c1ce0492cbcc?auto=format&fit=crop&q=80&w=800')">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jarritos</h3>
+                        <p>Assorted Mexican sodas.</p>
+                        <span class="price">$3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand-col">
+                    <h3>El Ranchito</h3>
+                    <p>Authentic Mexican Restaurant</p>
+                </div>
+                <div class="links-col">
+                    <h4>Navigate</h4>
+                    <a href="index.html#about">Our Story</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#visitus">Contact</a>
+                </div>
+                <div class="contact-col">
+                    <h4>Find Us</h4>
+                    <p>740 FL-60<br>Lake Wales, FL 33853</p>
+                    <p><a href="tel:8632238010" style="color: inherit;">(863) 223-8010</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 El Ranchito. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
